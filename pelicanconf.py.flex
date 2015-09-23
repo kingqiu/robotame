@@ -5,9 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = u'Jim'
 SITENAME = u'Robot & ME'
 SITEURL = u'http://localhost:8000'
-SITETITLE = u'Robot & ME'
-SITESUBTITLE = u'Jim & I whisper here...'
-SITEDESCRIPTION = u'We whisper here...'
+SITETITLE = AUTHOR
+SITESUBTITLE = u'Blogger'
+SITEDESCRIPTION = u'%s\ and Robot whisper' % AUTHOR
 SITELOGO = u'../theme/img/profile.jpg'
 FAVICON = SITEURL + '/images/favicon.ico'
 
@@ -21,13 +21,13 @@ OG_LOCALE = u'en_US'
 
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = True
 MAIN_MENU = True
 
 # Blogroll
@@ -36,13 +36,10 @@ LINKS = (('Portfolio', 'http://www.lifelongblog.cn/'),)
 # Social widget
 SOCIAL = (('linkedin', 'https://cn.linkedin.com/in/jingqiu'),
           ('github', 'https://github.com/kingqiu'),
-	  ('twitter', 'https://twitter.com/jingqiu'),
-	  ('facebook','https://www.facebook.com/jingqiu'),)
+	  ('google', 'http://www.baidu.com'),)
 
-DISPLAY_CATEGORISE_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
 MEMUITEMS = (('Archives', '/archives.html'),
-	     )
+	     ('Categories','/categories.html'),)
 
 CC_LICENSE = {
 	'name': 'Creative Commons Attribution-ShareAlike',
