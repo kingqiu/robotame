@@ -27,11 +27,13 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = True
+
+
 MAIN_MENU = True
 
 # Blogroll
-LINKS = (('Portfolio', 'http://www.lifelongblog.cn/'),)
+LINKS = (('my profile', 'http://www.lifelongblog.cn/'),)
 
 # Social widget
 SOCIAL = (('linkedin', 'https://cn.linkedin.com/in/jingqiu'),
@@ -39,10 +41,10 @@ SOCIAL = (('linkedin', 'https://cn.linkedin.com/in/jingqiu'),
 	  ('twitter', 'https://twitter.com/jingqiu'),
 	  ('facebook','https://www.facebook.com/jingqiu'),)
 
-DISPLAY_CATEGORISE_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
-MEMUITEMS = (('Archives', '/archives.html'),
-	     )
+#DISPLAY_CATEGORISE_ON_MENU = True
+#DISPLAY_PAGES_ON_MENU = True
+
+MEMUITEMS = (('Archives', '/archives.html'),)
 
 CC_LICENSE = {
 	'name': 'Creative Commons Attribution-ShareAlike',
@@ -56,3 +58,4 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+LOAD_CONTENT_CACHE = False
